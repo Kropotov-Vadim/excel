@@ -9,8 +9,12 @@
     "semi": "off",
     "arrow-parents": "off",
     "comma-dangle": "off",
-    "reqiire-jsdoc": "off",
-    "linebreak-style": "off"
+    "linebreak-style": "off",
+    "object-curly-spacing": "off",
+    "eol-last": "off",
+    "require-jsdoc": "off",
+    "operator-linebreak": "off",
+    "indent": "off"
   },
   "extends": ["eslint:recommended", "google"]
 }
