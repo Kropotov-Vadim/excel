@@ -4,7 +4,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const path = require('path')
 
-
 const isProd = process.env.NODE_ENV === "production"
 const isDev = !isProd 
 
@@ -16,7 +15,7 @@ const jsLoader =  () => {
       loader: 'babel-loader',
       options: {
         presets: ['@babel/preset-env'],
-        plugins:['@babel/plugin-proposal-class-properties']
+        plugins: ['@babel/plugin-proposal-class-properties']
       }
     }
   ]
@@ -60,7 +59,7 @@ module.exports = {
     new CopyPlagin({
       patterns: [ 
         {
-           from: path.resolve(__dirname, 'src/favicon.ico'),
+          from: path.resolve(__dirname, 'src/favicon.ico'),
           to: path.resolve(__dirname, 'dist')
         }
       ]
